@@ -127,11 +127,11 @@ function renderHome() {
   mainContent.innerHTML = `
     <section class="carousel">
       <div class="slides">
-        <img src="photo1.png" alt="Slide 1">
-        <img src="photo2.png" alt="Slide 2">
-        <img src="photo3.png" alt="Slide 3">
-        <img src="photo4.png" alt="Slide 4">
-        <img src="photo5.png" alt="Slide 5">
+        <img src="photo1.jpg" alt="Slide 1">
+        <img src="photo2.jpg" alt="Slide 2">
+        <img src="photo3.jpg" alt="Slide 3">
+        <img src="photo4.jpg" alt="Slide 4">
+        <img src="photo5.jpg" alt="Slide 5">
       </div>
       <button class="carousel-button prev" aria-label="Previous slide">&lt;</button>
       <button class="carousel-button next" aria-label="Next slide">&gt;</button>
