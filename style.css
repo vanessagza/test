@@ -14,6 +14,8 @@ body {
   color: var(--text);
   line-height: 1.6;
 }
+
+/* Header & Nav */
 .site-header {
   display: flex; align-items: center;
   padding: 0.5rem 1rem;
@@ -21,7 +23,7 @@ body {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   position: sticky; top: 0; z-index: 100;
 }
-.logo { height: 65px; width: auto; }
+.logo { height: 65px; width: auto; cursor: pointer; }
 .site-nav { margin-left: auto; }
 .nav-list { display: flex; gap: 1.5rem; list-style: none; }
 .nav-list li {
@@ -30,27 +32,21 @@ body {
   transition: color var(--transition);
 }
 .nav-list li.active,
-.nav-list li:hover {
-  color: var(--primary);
-}
+.nav-list li:hover { color: var(--primary); }
 
+/* Main content sections spacing */
+.main-content section { margin-bottom: 3rem; }
 .main-content {
   max-width: 1100px; margin: 2rem auto; padding: 0 1rem;
   opacity: 0; transition: opacity var(--transition);
 }
-.main-content.visible {
-  opacity: 1;
-}
-
-h1, h2 { color: var(--primary); margin-bottom: 1rem; }
-p, ul, table { margin-bottom: 1rem; }
-ul { margin-left: 1.25rem; }
+.main-content.visible { opacity: 1; }
 
 /* Carousel */
 .carousel {
   position: relative;
   overflow: hidden;
-  height: 300px;
+  height: 400px;
   margin-bottom: 2rem;
 }
 .slides {
@@ -64,13 +60,10 @@ ul { margin-left: 1.25rem; }
 }
 .carousel-button {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 50%; transform: translateY(-50%);
   background: rgba(0,0,0,0.4);
-  border: none;
-  color: white;
-  padding: 0.5rem;
-  cursor: pointer;
+  border: none; color: white;
+  padding: 0.5rem; cursor: pointer;
   border-radius: 50%;
 }
 .prev { left: 1rem; }
@@ -98,13 +91,49 @@ ul { margin-left: 1.25rem; }
 .service-card:hover {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-.service-card h3 {
-  margin-bottom: 0.5rem;
-  color: var(--primary);
+.service-card h3 { margin-bottom: 0.5rem; color: var(--primary); }
+
+/* Quote section */
+.quote-section {
+  background: var(--primary);
+  color: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
 }
+.quote-section a { color: var(--white); text-decoration: underline; }
 
 /* FAQ */
 .faq-item { margin-bottom: 1.5rem; }
 .faq-item h3 { margin-bottom: 0.5rem; color: var(--primary); }
+
+/* Contact card */
+.contact-card {
+  background: var(--primary);
+  color: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+}
+.contact-card a { color: var(--white); text-decoration: underline; }
+
+/* Footer */
+.site-footer {
+  background: var(--primary);
+  color: var(--white);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-footer nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+.site-footer nav a {
+  color: var(--white);
+  text-decoration: none;
+}
+.site-footer nav a:hover { text-decoration: underline; }
 
 li { margin-bottom: 0.5rem; }
