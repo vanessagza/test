@@ -1,83 +1,67 @@
 // script.js (ES6 module)
 const navItems = [
-  { title: 'Home', page: 'home' },
-  { title: 'About Us', page: 'about' },
-  { title: 'Services', page: 'services' },
-  { title: 'FAQ', page: 'faq' },
-  { title: 'Contact Us', page: 'contact' }
+  { title: 'Home',    page: 'home'    },
+  { title: 'About Us',page: 'about'   },
+  { title: 'Services',page: 'services'},
+  { title: 'FAQ',     page: 'faq'     },
+  { title: 'Contact Us', page: 'contact'}
 ];
 
 const services = [
-  {
-    name: 'Desktop Application Development',
-    description: 'Native apps for Windows, macOS, and Linux that run offline or integrate with external systems.'
-  },
-  {
-    name: 'Web Development',
-    description: 'Responsive, scalable websites and web apps, including front-end interfaces, back-end logic, and full-stack systems.'
-  },
-  {
-    name: 'Mobile App Development',
-    description: 'Designing and developing mobile apps for Android and iOS, optimized for performance, usability, and platform standards.'
-  },
-  {
-    name: 'Cybersecurity',
-    description: 'Vulnerability assessments, penetration testing, security patching & updates, authentication (OAuth2, SSO, 2FA), data encryption & monitoring.'
-  },
-  {
-    name: 'AI, Data & Machine Learning',
-    description: 'Data pipelines, ML/DL model development (e.g. facial/object recognition, chatbots), NLP solutions, predictive analytics, and visualization dashboards.'
-  },
-  {
-    name: 'API Development & Integration',
-    description: 'RESTful & GraphQL API design, development, documentation, versioning, deployment, and third-party integrations.'
-  },
-  {
-    name: 'E-Commerce Development',
-    description: 'Custom online stores, payment gateway integration, inventory management systems, and ongoing shop maintenance.'
-  },
-  {
-    name: 'Game Development',
-    description: '2D/3D game design, virtual & augmented reality experiences, mixed reality, and multiplayer networking.'
-  },
-  {
-    name: 'Blockchain',
-    description: 'Cryptocurrency development, smart-contract creation, blockchain integration, and DApp development.'
-  },
-  {
-    name: 'Business Analytics',
-    description: 'Analytics platform integration, custom event tracking, automated reporting, and KPI dashboard creation.'
-  },
-  {
-    name: 'Education & Documentation',
-    description: 'Technical manuals, user guides, courses, tutorials, workshops, and curriculum design for bootcamps.'
-  },
-  {
-    name: 'Maintenance & Support',
-    description: 'Ongoing bug fixes, version upgrades, performance tuning, and SLA-backed support packages.'
-  }
+  { name: 'Desktop Application Development', description: 'Native apps for Windows, macOS, and Linux that run offline or integrate with external systems.' },
+  { name: 'Web Development',                  description: 'Responsive, scalable websites and web apps, including front-end interfaces, back-end logic, and full-stack systems.' },
+  { name: 'Mobile App Development',           description: 'Designing and developing mobile apps for Android and iOS, optimized for performance, usability, and platform standards.' },
+  { name: 'Cybersecurity',                    description: 'Vulnerability assessments, penetration testing, security patching & updates, authentication (OAuth2, SSO, 2FA), data encryption & monitoring.' },
+  { name: 'AI, Data & Machine Learning',      description: 'Data pipelines, ML/DL model development (e.g. facial/object recognition, chatbots), NLP solutions, predictive analytics, and visualization dashboards.' },
+  { name: 'API Development & Integration',    description: 'RESTful & GraphQL API design, documentation, versioning, deployment, and third-party integrations.' },
+  { name: 'E-Commerce Development',           description: 'Custom online stores, payment gateway integration, inventory management systems, and ongoing shop maintenance.' },
+  { name: 'Game Development',                 description: '2D/3D game design, virtual & augmented reality experiences, mixed reality, and multiplayer networking.' },
+  { name: 'Blockchain',                       description: 'Cryptocurrency development, smart-contract creation, blockchain integration, and DApp development.' },
+  { name: 'Business Analytics',               description: 'Analytics platform integration, custom event tracking, automated reporting, and KPI dashboard creation.' },
+  { name: 'Education & Documentation',        description: 'Technical manuals, user guides, courses, tutorials, workshops, and curriculum design for bootcamps.' },
+  { name: 'Maintenance & Support',            description: 'Ongoing bug fixes, version upgrades, performance tuning, and SLA-backed support packages.' }
 ];
 
 const faq = [
   {
-    q: 'How do you price a project?',
-    a: 'All quotes are based on scope, timeline, and technologies. Email us with project details for a custom estimate.'
+    q: 'What services do you offer?',
+    a: 'We offer end-to-end technology solutions: desktop, web & mobile apps; cybersecurity services; AI & data science; API design; e-commerce; game dev; blockchain; analytics; documentation; and ongoing maintenance & support.'
   },
   {
-    q: 'What is your typical delivery time?',
-    a: 'Depends on complexity: small projects (2–4 weeks), medium (1–3 months), large (3+ months).'
+    q: 'How can I request a quote?',
+    a: 'Email us at contact@omnisyn.com.mx with a clear project overview, objectives, scope, timeline, budget range, required technologies, and your company details. We’ll get back with a tailored estimate.'
   },
   {
     q: 'Which industries do you serve?',
-    a: 'We work across finance, healthcare, retail, manufacturing, and more—any organization needing tech and security.'
+    a: 'Our clients span finance, healthcare, retail, manufacturing, education, and more—any organization needing robust, secure, and scalable tech solutions.'
   },
   {
-    q: 'Do you offer ongoing maintenance?',
-    a: 'Yes. We have SLA-backed support packages covering updates, patches, and performance tuning.'
+    q: 'What technologies do you specialize in?',
+    a: 'We work with modern stacks: React, Angular, Vue, Node.js, .NET, Java, Python, Kotlin/Swift for mobile, Unity/Unreal for games, TensorFlow/PyTorch for AI, and major cloud platforms (AWS, Azure, GCP).'
   },
   {
-    q: 'How do you ensure security?',
-    a: 'We follow OWASP and ISO standards, perform regular vulnerability scans, and use best-practice encryption and authentication.'
+    q: 'Do you integrate with legacy systems?',
+    a: 'Absolutely—our team can build APIs or connectors to bridge new applications with existing ERP, CRM, or on-premise platforms, ensuring seamless data flow.'
+  },
+  {
+    q: 'What is your approach to security?',
+    a: 'We follow OWASP Top 10 and ISO/IEC 27001 standards, perform regular vulnerability scans, penetration tests, and implement encryption, secure auth (2FA/SSO), and monitoring best practices.'
+  },
+  {
+    q: 'Can you provide ongoing support?',
+    a: 'Yes. We offer SLA-backed maintenance plans covering bug fixes, performance tuning, version upgrades, and security patching to keep your systems running smoothly.'
+  },
+  {
+    q: 'How do you handle data privacy?',
+    a: 'We implement role-based access controls, data encryption at rest/in transit, and comply with GDPR, HIPAA, or local privacy regulations as required by your industry.'
+  },
+  {
+    q: 'Can you train our team?',
+    a: 'We deliver customized workshops, tutorials, and detailed documentation to enable your staff to manage, maintain, and extend any solution we build together.'
+  },
+  {
+    q: 'What guarantees do you provide?',
+    a: 'All work is covered by our quality assurance process. We provide 30-day post-delivery support to address any issues and ensure your full satisfaction.'
   }
 ];
 
@@ -138,7 +122,7 @@ function renderHome() {
     </section>
     <section>
       <h1>About OmniSyn Technologies</h1>
-      <p>OmniSyn is a Monterrey-based tech consultancy specializing in Cybersecurity, AI & Data, and custom software. We secure, optimize, and scale your digital footprint.</p>
+      <p>OmniSyn is a Monterrey-based tech consultancy specializing in Cybersecurity, AI & Data, and custom software. We secure, optimize, and scale your digital footprint using proven best practices and cutting-edge tools.</p>
     </section>
     <section>
       <h1>Our Services</h1>
@@ -151,12 +135,12 @@ function renderHome() {
         `).join('')}
       </div>
     </section>
-    <section>
+    <section class="quote-section">
       <h1>Get a Quote</h1>
-      <p>Email us at <a href="mailto:contact@omnisyn.com.mx">contact@omnisyn.com.mx</a> with:</p>
+      <p>Email us at <a href="mailto:contact@omnisyn.com.mx">contact@omnisyn.com.mx</a> including:</p>
       <ul>
         <li>Project overview & objectives</li>
-        <li>Scope & timeline</li>
+        <li>Scope & expected timeline</li>
         <li>Budget range</li>
         <li>Technologies/platforms required</li>
         <li>Your name & company</li>
@@ -172,12 +156,13 @@ function initCarousel() {
   let idx = 0, total = imgs.length;
   const prev = document.querySelector('.prev');
   const next = document.querySelector('.next');
-
   function update() {
     slides.style.transform = `translateX(-${idx * 100}%)`;
   }
   prev.onclick = () => { idx = (idx - 1 + total) % total; update(); };
   next.onclick = () => { idx = (idx + 1) % total; update(); };
+  // auto-slide every 5s
+  setInterval(() => { idx = (idx + 1) % total; update(); }, 5000);
 }
 
 function renderAbout() {
@@ -199,7 +184,6 @@ function renderServices() {
   `;
   const grid = document.getElementById('services-grid');
   const search = document.getElementById('service-search');
-
   function populate(filter = '') {
     grid.innerHTML = '';
     services
@@ -211,7 +195,6 @@ function renderServices() {
         grid.appendChild(card);
       });
   }
-
   populate();
   search.addEventListener('input', e => populate(e.target.value));
 }
@@ -231,14 +214,16 @@ function renderFAQ() {
 function renderContact() {
   mainContent.innerHTML = `
     <h1>Contact Us</h1>
-    <p>For quotes or inquiries, please email <a href="mailto:contact@omnisyn.com.mx">contact@omnisyn.com.mx</a>. All quotes are handled via email. To help us respond quickly, include:</p>
-    <ul>
-      <li>Project overview & objectives</li>
-      <li>Scope & expected timeline</li>
-      <li>Budget range</li>
-      <li>Specific technologies or requirements</li>
-      <li>Your name & company details</li>
-    </ul>
+    <div class="contact-card">
+      <p>For quotes or inquiries, please email <a href="mailto:contact@omnisyn.com.mx">contact@omnisyn.com.mx</a>. All quotes are handled via email. To help us respond quickly, include:</p>
+      <ul>
+        <li>Project overview & objectives</li>
+        <li>Scope & expected timeline</li>
+        <li>Budget range</li>
+        <li>Specific technologies or requirements</li>
+        <li>Your name & company details</li>
+      </ul>
+    </div>
   `;
 }
 
