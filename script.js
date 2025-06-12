@@ -116,17 +116,6 @@ function renderHome() {
     <section class="download-section">
       <button class="pdf-btn" onclick="downloadCatalogue()">Download Services Catalogue</button>
     </section>
-    <section class="contact-card">
-      <h1>Contact Us</h1>
-      <p>For quotes or inquiries, please email <a href="mailto:contact@omnisyn.com.mx">contact@omnisyn.com.mx</a>. All quotes are handled via email. To help us respond quickly, include:</p>
-      <ul>
-        <li>Project overview & objectives</li>
-        <li>Scope & expected timeline</li>
-        <li>Budget range</li>
-        <li>Specific technologies or requirements</li>
-        <li>Your name & company details</li>
-      </ul>
-    </section>
   `;
   initCarousel();
 }
