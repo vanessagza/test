@@ -142,7 +142,7 @@ function initCarousel() {
 function renderAbout() {
   mainContent.innerHTML = `
     <h1>About OmniSyn Technologies</h1>
-    <p>OmniSyn is a Monterrey-based tech consultancy specializing in Cybersecurity, AI & Data, and custom software solutions. We partner with businesses to secure, optimize, and grow their digital footprint using the latest technologies and best practices.</p>
+    <p>OmniSyn Technologies is a Monterrey-based tech company specializing in cybersecurity, custom software, and information technology services. We help businesses protect their digital assets through services like penetration testing, risk assessments, and cyber defense planning. We also design tailored software solutions — including AI-powered tools — to support each client’s operational goals. At OmniSyn, we combine innovation and security to help organizations grow with confidence.</p>
     <h2>Mission</h2>
     <p>Deliver cutting-edge technology solutions with uncompromising security standards.</p>
     <h2>Vision</h2>
